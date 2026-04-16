@@ -28,5 +28,56 @@ The following requirements define the key features and functionalities implement
 11. The system must allow exporting data to a CSV file.
 12. The system must allow importing data from a CSV file.
 
+## Documentation
+### Algorithms and Logic
+The system is based on a simple CRUD (Create, Read, Update, Delete) algorithm for managing appointments.
+- Create: A new appointment is created and added to the list with a unique ID.
+- Read: All appointments are displayed using a loop through the list.
+- Update: The system searches for an appointment by ID and updates its fields.
+- Delete: The system removes an appointment by ID using conditional filtering.
+The program uses a menu-driven loop to continuously interact with the user until exit.
+
+### Data Structures
+- The application uses an ArrayList to store appointment objects.
+- ArrayList allows dynamic resizing and easy manipulation of data (add, remove, iterate).
+
+### Functions and Modules
+The system is divided into several classes:
+
+- Main
+  - Handles user input and menu navigation.
+  - Controls program flow.
+- AppointmentManager
+  - Contains business logic.
+  - Implements CRUD operations.
+  - Handles file operations (save/load, import/export).
+- Appointment
+  - Represents a single appointment.
+  - Stores all appointment data (id, name, service, date, time).
+- Person
+  - Parent class for demonstrating inheritance.
+
+### File Handling
+- Data is stored in a text file (`appointments.txt`).
+- Each appointment is saved as a comma-separated string.
+- The system loads data from the file at startup and saves after each change.
+Additionally:
+- CSV export allows saving data externally.
+- CSV import allows restoring data into the system.
+
+### Challenges Faced
+During development, several challenges were encountered:
+- Implementing correct file reading and writing without data loss
+- Maintaining unique ID generation after loading data from file
+- Handling invalid user input for date and time
+- Designing a modular structure using OOP principles
+- Ensuring synchronization between in-memory data and file storage
+
+### Possible Improvements
+- Add a graphical user interface (GUI)
+- Integrate a database (MySQL, SQLite)
+- Add user authentication and roles
+- Integrate with Google Calendar for notifications    
+
 
     
