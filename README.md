@@ -1,6 +1,6 @@
 # finalproject
-#Appointment Booking System
-##Manages appointment bookings for various services or professionals, allowing scheduling and cancellation of appointments
+**Appointment Booking System**
+Manages appointment bookings for various services or professionals, allowing scheduling and cancellation of appointments
 ## Askerova Diana | COMFCI-25
 ##  Objectives
 The main objective of this project is to develop a console-based appointment booking system for a beauty salon that simplifies and organizes the process of managing client bookings.
