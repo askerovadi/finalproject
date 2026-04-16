@@ -80,4 +80,47 @@ During development, several challenges were encountered:
 - Integrate with Google Calendar for notifications    
 
 
+## Test Cases
+
+### Test Case 1: Add Appointment
+Input:
+Name: Diana  
+Service: Nails  
+Date: 2026-04-20  
+Time: 15:00  
+
+Output:
+Appointment added!
+
+
+### Test Case 2: View Appointments
+Output:
+1 | Diana | Nails | 2026-04-20 15:00  
+
+
+### Test Case 3: Delete Appointment
+Input:
+ID: 1  
+
+Output:
+Appointment deleted!
+
+
+### Test Case 4: Update Appointment
+Input:
+ID: 1  
+New service: Haircut  
+
+Output:
+Appointment updated!
+
+
+### Test Case 5: Export Data
+Output:
+Exported to CSV
+
+
+### Test Case 6: Import Data
+Output:
+Imported from CSV
     
