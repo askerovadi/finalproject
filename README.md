@@ -7,7 +7,7 @@ The main objective of this project is to develop a console-based appointment boo
 The project aims to:
 - Allow users to create, view, update, and delete appointments (CRUD functionality)
 - Provide a clear and user-friendly command-line interface for interaction
-- Ensure data accuracy through input validation for date and time
+- Ensure correct date and time input through validation
 - Store appointment data persistently using file handling
 - Apply Object-Oriented Programming principles such as encapsulation, inheritance, and polymorphism
 - Enable data portability through import and export functionality (CSV format)
@@ -34,7 +34,7 @@ The system is based on a simple CRUD (Create, Read, Update, Delete) algorithm fo
 - Create: A new appointment is created and added to the list with a unique ID.
 - Read: All appointments are displayed using a loop through the list.
 - Update: The system searches for an appointment by ID and updates its fields.
-- Delete: The system removes an appointment by ID using conditional filtering.
+- Delete:The system removes an appointment by matching its ID.
 The program uses a menu-driven loop to continuously interact with the user until exit.
 
 ### Data Structures
@@ -63,7 +63,7 @@ The system is divided into several classes:
 - The system loads data from the file at startup and saves after each change.
 Additionally:
 - CSV export allows saving data externally.
-- CSV import allows restoring data into the system.
+- CSV import allows loading saved appointment records into the system.
 
 ### Challenges Faced
 During development, several challenges were encountered:
@@ -77,7 +77,7 @@ During development, several challenges were encountered:
 - Add a graphical user interface (GUI)
 - Integrate a database (MySQL, SQLite)
 - Add user authentication and roles
-- Integrate with Google Calendar for notifications    
+- Add search appointments by client name     
 
 
 ## Test Cases
@@ -109,8 +109,9 @@ Appointment deleted!
 ### Test Case 4: Update Appointment
 Input:
 ID: 1  
-New service: Haircut  
-
+New service: Haircut 
+New date: 2026-04-21
+New time: 16:00
 Output:
 Appointment updated!
 
